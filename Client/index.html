@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Image Generation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="chat-box" class="hidden">
+        <div id="chatbot">
+            <header>
+                <h2>ChatBot</h2>
+                <button id="minimize-btn" onclick="minimizeChatbot()">-</button>
+            </header>
+        </div>
+        <div id="ai-response"></div>
+        <div id="input-container">
+            <input id="chat-input" type="text" placeholder="Type a message">
+            <button onclick="sendMessage()">Send</button>
+            <button onclick="startVideoCall()">Start Video Call</button>
+        </div>
+      
+    </div>
+    <button id="chat-toggle" onclick="toggleChatbot()">Chat</button>
+
+    <script src="script.js"></script>
+    <script>
+        function startVideoCall() {
+            window.open('video-call.html', '_blank', 'width=800,height=600');
+        }
+
+      
+       
+    </script>
+</body>
+</html>
